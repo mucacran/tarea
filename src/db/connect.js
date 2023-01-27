@@ -4,17 +4,7 @@ dotenv.config();
 const { MongoClient, ServerApiVersion } = require('mongodb');
 
 let _db;
-const uri = `mongodb+srv://${process.env.usuario}:${process.env.contrasena}@cluster0.w4yyxxg.mongodb.net/test`;
-/*
-const { MongoClient, ServerApiVersion } = require('mongodb');
 const uri = process.env.contras_URI;
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
-client.connect(err => {
-  const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
-  client.close();
-});
-*/
 
 const initDb = (callback) => {
   if (_db) {
