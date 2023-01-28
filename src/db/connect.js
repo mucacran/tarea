@@ -1,7 +1,7 @@
 const dotenv = require('dotenv');
 dotenv.config();
 //const MongoClient = require('mongodb').MongoClient;
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient } = require('mongodb');
 
 let _db;
 const uri = process.env.contras_URI;
@@ -30,5 +30,5 @@ const getDb = () => {
 
 module.exports = {
   initDb,
-  getDb,
+  getDb
 };

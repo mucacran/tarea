@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js",
-    "swagger": "node swagger.js"
+    "swagger": "node swagger.js",
+    "eslint": "eslint .",
+    "lint": "jshint src",
+    "format": "prettier --config prettier.config.json --write ./**/*.{js,json,html}"
   },
   "author": "Sergio Bravo Moran",
   "license": "ISC",
@@ -21,7 +24,10 @@
     "swagger-ui-express": "^4.6.0"
   },
   "devDependencies": {
+    "eslint": "^8.32.0",
+    "jshint": "^2.13.6",
     "nodemon": "^2.0.20",
+    "prettier": "^2.8.3",
     "swagger-autogen": "^2.22.0"
   }
 }

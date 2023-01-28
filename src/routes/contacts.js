@@ -8,14 +8,13 @@ const cors = require('cors');
 // Configuring body parser middleware
 router.use(bodyParser.urlencoded({ extended: false }));
 router.use(bodyParser.json());
-//variable de matriz de contactos
-let contactos = [];
+
 router.use(cors());
 
 router.get('/', contactsController.getAll);
 router.get('/:id', contactsController.getSingle);
 
-router.post('/',contactsController.enviardatos);
+router.post('/', contactsController.enviardatos);
 
 router.put('/:id', contactsController.updateContact);
 
