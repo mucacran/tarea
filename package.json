@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js",
-    "swagger": "node ./swagger.js"
+    "swagger": "node swagger.js"
   },
   "author": "Sergio Bravo Moran",
   "license": "ISC",
@@ -17,6 +17,7 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mongodb": "^4.13.0",
+    "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^4.6.0"
   },
   "devDependencies": {

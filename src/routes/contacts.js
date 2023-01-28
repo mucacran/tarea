@@ -14,13 +14,6 @@ router.use(cors());
 
 router.get('/', contactsController.getAll);
 router.get('/:id', contactsController.getSingle);
-router.post('/respaldo/', (req, res) => {
-    const contacto = req.body;
-    // Output the contacto to the console for debugging
-    console.log(contacto);
-    contactos.push(contacto);
-    res.send('contacto is added to the database');
-});
 
 router.post('/',contactsController.enviardatos);
 
