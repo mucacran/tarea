@@ -4,7 +4,7 @@ dotenv.config();
 const { MongoClient } = require('mongodb');
 
 let _db;
-const uri = process.env.contras_URI;
+const uri = `mongodb+srv://${process.env.usuario}:${process.env.contrasena}@cluster0.w4yyxxg.mongodb.net/test`;
 
 const initDb = (callback) => {
   if (_db) {
